@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*   let student = {
+                name: "Anubhav",
+                age: "22",
+                display: function () {
+                    console.log(`name: ${this.name}`);
+                }
+            };
+            student.display();
+    
+            //filter
+            let n3 = [15, 7, 8, 10];
+            let evenno = n3.filter(function (n) {
+                return n % 2;
+            });
+            console.log(`even no:${evenno}`);
+            //map
+            const number = [1, 2, 3, 4, 5,];
+            const mult = 3;
+            const newarr = number.map(function (number) {
+                return number * mult;
+            })
+            console.log(`thrice array:${newarr}`);
+            //class
+            class person {
+                constructor(name, age) {
+                    this.name,
+                        this.age
+                }
+                getname() {
+                    return this.name;
+                }
+                getage() {
+                    return this.age;
+                }
+    
+    
+            }
+            let p1 = new person(Anubhav, 21);
+            console.log(p1.getname);
+            console.log(p1.getage);
+            //inheritence
+            class animal {
+                speak() {
+                    console.log("Animal speak");
+                }
+            }
+            class dog extends animal {
+                dog(name, age) {
+    
+                    this.name = name,
+                        this.age = age
+                }
+                speak() {
+                    super();
+                    console.log("dogs barks");
+                }
+    
+            }
+            let d1 = new dog("rocky", 3)
+            console.log(d1.name);
+            d1.speak;*/
+        //student information
+        class student3 {
+            student3(name, age) {
+                this.name = name,
+                    this.age = age
+            }
+            getname() {
+                return this.name;
+            }
+            getage() {
+                return this.age;
+            }
+
+        }
+        let s1 = new student3("Anubhav", 10);
+        let s2 = new student3("raj", 15);
+        let s3 = new student3("raj", 20);
+        let s4 = new student3("raj", 25);
+        let s5 = new student3("raj", 30);
+        //
+        const students = [
+            { name: "Student1", age: 10 },
+            { name: "Student2", age: 15 },
+            { name: "Student3", age: 20 },
+            { name: "Student4", age: 25 },
+            { name: "Student5", age: 30 },
+        ];
+
+        // Use the filter method to create a new array with students aged 20 or older
+        const studentsAbove20 = students.filter(student => student.age >= 20);
+
+        // Output the filtered array of students
+        console.log(studentsAbove20);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

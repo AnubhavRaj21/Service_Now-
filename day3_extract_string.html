@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Extract a substring from index 3 and store in a variable
+        var originalStr = "I am enjoying my training";
+        var extractedStr1 = originalStr.slice(3);
+
+        // Extract a substring from index 0 to 4 and store in a variable
+        var extractedStr2 = originalStr.slice(0, 5);
+
+        // Replace "training" with "journey" and store in a variable
+        var replacedStr = originalStr.replace("training", "journey");
+
+        // Print all characters of a string using a for loop
+        for (var i = 0; i < originalStr.length; i++) {
+            console.log(originalStr.charAt(i));
+        }
+
+        // Store the string "a,b,c" into an array
+        var str = "a,b,c";
+        var strArray = str.split(',');
+
+        // Remove white spaces from the string " abc "
+        var stringWithSpaces = " abc ";
+        var trimmedStr = stringWithSpaces.trim();
+
+        // Add two strings using concat() with a space between them and print
+        var str1 = "Hello";
+        var str2 = "World";
+        var concatenatedStr = str1.concat(" ", str2);
+
+        console.log("Extracted Substring 1: " + extractedStr1);
+        console.log("Extracted Substring 2: " + extractedStr2);
+        console.log("Replaced String: " + replacedStr);
+        console.log("Array from 'a,b,c':", strArray);
+        console.log("Trimmed String: " + trimmedStr);
+        console.log("Concatenated String: " + concatenatedStr);
+
+    </script>
+</body>
+
+</html>

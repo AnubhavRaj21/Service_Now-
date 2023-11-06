@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student's information</title>
+</head>
+
+<body>
+    <script>
+        var student = {
+            Name: "",
+            Age: 0,
+            Grade: ""
+        };
+
+
+        student.displayInfo = function () {
+            console.log("Student Name: " + this.Name);
+            console.log("Student Age: " + this.Age);
+            console.log("Student Grade: " + this.Grade);
+        };
+
+
+        student.Name = prompt("Enter the student's name:");
+        student.Age = parseInt(prompt("Enter the student's age:"));
+        student.Grade = prompt("Enter the student's grade:");
+
+
+        student.displayInfo();
+
+    </script>
+
+</body>
+
+</html>
